@@ -82,8 +82,7 @@ $('.navbar__item-support').onclick = () => {
 $('.navbar__item-shopping-cart').onclick = () => {
     $('.shopping-cart').classList.toggle('open')
 }
-
-// Cart 
+ 
 
 
 
