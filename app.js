@@ -79,9 +79,11 @@ $('.navbar__item-support').onclick = () => {
 }
 
 // Cart click
-// $('.navbar__item-shopping-cart').onclick = () => {
-//     $('.shopping-cart').classList.toggle('open')
-// }
+$('.navbar__item-shopping-cart').onclick = () => {
+    $('.shopping-cart').classList.toggle('open')
+}
+
+// Cart 
 
 
 
