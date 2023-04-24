@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide header__container">
+                <a href="" class="header__logo"></a>
+
+                <ul class="navbar navbar-menu">
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link">store</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link">commission</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link">catalogue</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link">about us</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link">blog</a>
+                    </li>
+                    <li class="navbar__item navbar__item-support">
+                        <a href="#" class="navbar__item-link">
+                            support
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="support__list">
+                            <li class="support__item"><a href="#" class="support__link">FAQ</a></li>
+                            <li class="support__item"><a href="#" class="support__link">shipping & return</a></li>
+                            <li class="support__item"><a href="#" class="support__link">privacy & terms</a></li>
+                            <li class="support__item"><a href="#" class="support__link">collaboration</a></li>
+                            <li class="support__item"><a href="#" class="support__link">contact us</a></li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link">authenticity</a>
+                    </li>
+                </ul> 
+
+                <ul class="navbar navbar-login">
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link">
+                            <i class="fa-brands fa-discord"></i>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="" class="navbar__item-link">
+                            <i class="fa-solid fa-circle-user"></i>
+                        </a>
+                    </li>
+                    <li class="navbar__item navbar__item-login">
+                        <a href="#" class="navbar__item-link">Login</a>
+                    </li>
+                    <li class="navbar__item navbar__item-shopping-cart">
+                        <a href="#" class="navbar__item-link">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <div class="grid shopping-cart">
+                            <div class="row cart-header">
+                                <div class="col l-6 cart-header__title">
+                                    <h3>Your Cart</h3>        
+                                    <span>Empty</span>                            
+                                </div>
+                                <div class="col l-6 cart-header__icon">
+                                    <i class="fa-solid fa-x"></i>
+                                </div>
+                            </div> 
+                            <div class="row cart-content">
+                                <div class="col l-12 cart-content__empty-img">
+                                    <img src="./assets/img/empty-cart.png" alt=""> 
+                                    <span>Cart is empty</span>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <div class="row cart-footer__price">
+                                    <h4 class="col l-6">Subtotal</h4>
+                                    <h4 class="col l-6">$<span>0</span></h4>
+                                </div>
+                                <div class="row cart-footer__btns">
+                                    <div class="col l-6">
+                                        <div class="cart-btn">view cart</div>
+                                    </div>
+                                    <div class="col l-6">
+                                        <div class="cart-btn cart-btn-primary cart-btn--disabled">check out</div>
+                                    </div>
+                                </div>
+                                <div class="cart-footer__note">*For pre-order items, estimated shipping date can be found on the product detail page.</div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </header>
+
+        <div class="app__container">
+            <div class="grid wide">
+                <div class="row container__section upcoming-raffle">
+                    <div class="col l-7 upcoming-raffle__img"></div>
+
+                    <div class="col l-5 upcoming-raffle__content">
+                        <div class="upcoming-raffle__title">Upcoming Raffle</div>
+                        <div class="upcoming-raffle__label">1-2-3 What's coming?</div>
+
+                        <div class="upcoming-raffle__img-clock"></div>
+
+                        <div class="upcoming-raffle__clock">
+                            <ul class="upcoming-raffle__time-label">
+                                <li class="upcoming-raffle__time-label-item">Days</li>
+                                <li class="upcoming-raffle__time-label-item">Hours</li>
+                                <li class="upcoming-raffle__time-label-item">Minutes</li>
+                                <li class="upcoming-raffle__time-label-item">Seconds</li>
+                            </ul>
+                            <ul class="upcoming-raffle__time-label">
+                                <li class="upcoming-raffle__time-item upcoming-raffle__time-label-item">3</li>
+                                <li class="upcoming-raffle__time-item upcoming-raffle__time-label-item">12</li>
+                                <li class="upcoming-raffle__time-item upcoming-raffle__time-label-item">09</li>
+                                <li class="upcoming-raffle__time-item upcoming-raffle__time-label-item">02</li>
+                            </ul>
+                        </div>
+
+                        <div class="btn btn-primary upcoming-btn">
+                            Notify Me
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grid art-section">
+                <div class="row l-12 art__img"></div>
+
+                <div class="slider">
+                    <div class="slider__img">
+                        <a href="#" class="slider__img-link slider__img-link-left slider__img-link--active"></a>
+                        <a href="#" class="slider__img-link slider__img-link-right"></a>
+                    </div>
+
+                    <span class="slider__icon slider__icon-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="26" fill="none">
+                            <path d="M1 1L13 13L1 25" stroke="#F1F1F1" stroke-width="1.5"></path>
+                        </svg>
+                    </span>
+                    <span class="slider__icon slider__icon-right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="26" fill="none">
+                            <path d="M1 1L13 13L1 25" stroke="#F1F1F1" stroke-width="1.5"></path>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+
+            <div class="grid wide container__section featured-products">
+                <span class="row l-12 featured-products__label">featured products</span>
+
+                <ul class="row cart-list">
+                    <li class="col l-3 cart-item">
+                        <div class="cart-item__link">
+                            <div class="cart-item__img" style="background-image: url('./assets/img/spec-ops.jpeg');">
+                            </div>
+                            <div class="cart-item__content">
+                                <div class="cart-item__title">Spec Ops</div>
+                                <div class="cart-item__label">Sirius | Porcus v1.5 | Kibou | Exoboy</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col l-3 cart-item">
+                        <div class="cart-item__link">
+                            <div class="cart-item__img" style="background-image: url('./assets/img/deadbot.jpeg');">
+                            </div>
+                            <div class="cart-item__content">
+                                <div class="cart-item__title">Deadbot</div>
+                                <div class="cart-item__label">Sirius | Porcus v1.5 | Kibou | Exoboy</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col l-3 cart-item">
+                        <div class="cart-item__link">
+                            <div class="cart-item__img" style="background-image: url('./assets/img/necrobot.jpeg');">
+                            </div>
+                            <div class="cart-item__content">
+                                <div class="cart-item__title">Necrobot</div>
+                                <div class="cart-item__label">Sirius | Porcus v1.5 | Kibou | Exoboy</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col l-3 cart-item">
+                        <div class="cart-item__link">
+                            <div class="cart-item__img"
+                                style="background-image: url('./assets/img/sirius-keychain.jpeg');">
+                            </div>
+                            <div class="cart-item__content">
+                                <div class="cart-item__title">Sirius Keychain</div>
+                                <div class="cart-item__label">Leather Keychain</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="grid wide container__section featured-board">
+                <div class="row section__header">
+                    <span class="col l-5 section__title">featured board</span>
+                    <span class="col l-7 section__label">Artkey Universe is a team of Vietnamese artists with endless
+                        passion for making artisan keycaps and more.<br>Our mission is to transform your keyboard by
+                        putting art at your fingertips.</span>
+                </div>
+                <div class="row feartured-board__content">
+                    <div class="col l-6 feartured-board__img"
+                        style="background-image: url('./assets/img/harry-potter.jpeg')"></div>
+                    <div class="col l-6 feartured-board__list">
+                        <div class="feartured-board__item">
+                            <img class="feartured-board__item-img" src=./assets/img/8446.jpeg alt="">
+                        </div>
+                        <div class="feartured-board__item">
+                            <img class="feartured-board__item-img" src=./assets/img/1256.jpeg alt="">
+                        </div>
+                        <div class="feartured-board__item">
+                            <img class="feartured-board__item-img" src=./assets/img/5002.jpeg alt="">
+                        </div>
+                        <div class="feartured-board__item">
+                            <img class="feartured-board__item-img" src=./assets/img/4889.jpeg alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid wide container__section memo-board">
+                <div class="row section__header">
+                    <span class="col l-5 section__title">memo board</span>
+                    <span class="col l-7 section__label">All the latest news will be updated here!</span>
+                </div>
+                <ul class="row cart-list memo-board__list">
+                    <li class="col l-4 cart-item memo-board__item">
+                        <div class="cart-item__link">
+                            <div class="cart-item__img memo-board__img"
+                                style="background-image: url('./assets/img/memo-board.jpeg');">
+                            </div>
+                            <div class="cart-item__content memo-board__content">
+                                <div class="cart-item__title memo-board__title">Sirius | Toy Exosuit</div>
+                                <div class="cart-item__label memo-board__label">Through the Woof and into the Universe!
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="grid wide container__section blog">
+                <div class="row section__header">
+                    <span class="col l-5 section__title">blog</span>
+                    <span class="col l-7 section__label">You can see all the stories of our characters here!<br>There
+                        are also guidelines and announcements!</span>
+                </div>
+
+                <div class="row blog__content">
+                    <div class="col l-4 blog__clock">
+                        <div class="blog__clock-img"></div>
+                        <a href="#" class="blog__clock-title">View all<br>articles</a>
+                        <div class="blog__clock-label">ENHANCING ALL<br>OUR PLANETS DISCOVERED</div>
+                    </div>
+                    <div class="col l-8 cart-item blog__content-cart">
+                        <div class="cart-item__link">
+                            <div class="cart-item__img blog__content-cart-img"
+                                style="background-image: url('./assets/img/cosmo-killer.jpeg');">
+                            </div>
+                            <div class="cart-item__content blog-cart__content">
+                                <a class="cart-item__title2">COLLAB | COSMO KILLER</a>
+                                <div class="cart-item__date2">Feb 7, 2023</div>
+                                <div class="cart-item__label2">Cosmo Killer is an ambitious collaboration project
+                                    between Artkey Universe and Angry Miao.</div>
+                                <ul class="cart-item__list2">
+                                    <li class="cart-item__item2"><a href="" class="cart-item__link2">#ArtkeySharing</a>
+                                    </li>
+                                    <li class="cart-item__item2"><a href="" class="cart-item__link2">#ArtisanKeycap</a>
+                                    </li>
+                                    <li class="cart-item__item2"><a href="" class="cart-item__link2">#Collaboration</a>
+                                    </li>
+                                    <li class="cart-item__item2"><a href="" class="cart-item__link2">#CosmoKiller</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-slider">
+                    <span class="slider__icon slider__icon-left slider__icon-navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="26" fill="none">
+                            <path d="M1 1L13 13L1 25" stroke="#F1F1F1" stroke-width="1.5"></path>
+                        </svg>
+                    </span>
+                    <span class="slider__icon slider__icon-right slider__icon-navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="26" fill="none">
+                            <path d="M1 1L13 13L1 25" stroke="#F1F1F1" stroke-width="1.5"></path>
+                        </svg>
+                    </span>
+                    <div class="row blog-slider__row">
+                        <div class="col l-4 cart-item blog-slider__item">
+                            <div class="cart-item__link blog-slider__link">
+                                <div class="cart-item__img blog-slider__img"
+                                    style="background-image: url('./assets/img/commission-lookback.jpeg');">
+                                </div>
+
+                                <div class="cart-item__content blog-slider__content">
+                                    <a class="cart-item__title2 blog-slider__title">COMMISSION LOOKBACK</a>
+                                    <div class="cart-item__date2 blog-slider__date">Feb 1, 2023</div>
+                                    <div class="cart-item__label2 blog-slider__label">Artisan keycap commission is our
+                                        favorite way to acquire ideas, inspirations and it is also a chance for us to
+                                        connect with our fans.
+                                    </div>
+                                    <ul class="cart-item__list2 blog-slider__list">
+                                        <li class="cart-item__item2"><a href=""
+                                                class="cart-item__link2">#ArtkeySharing</a></li>
+                                        <li class="cart-item__item2"><a href=""
+                                                class="cart-item__link2">#ArtisanKeycap</a></li>
+                                        <li class="cart-item__item2"><a href="" class="cart-item__link2">#Commission</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 cart-item blog-slider__item">
+                            <div class="cart-item__link blog-slider__link">
+                                <div class="cart-item__img blog-slider__img"
+                                    style="background-image: url('./assets/img/collab-exoboy.jpeg');">
+                                </div>
+
+                                <div class="cart-item__content blog-slider__content">
+                                    <a class="cart-item__title2 blog-slider__title">COLLAB | EXOBOY</a>
+                                    <div class="cart-item__date2 blog-slider__date">Dec 17, 2022</div>
+                                    <div class="cart-item__label2 blog-slider__label">DCcaps’ Boy from the Stars puts on
+                                        Artkey’s Exploration Armor.</div>
+                                    <ul class="cart-item__list2 blog-slider__list">
+                                        <li class="cart-item__item2"><a href=""
+                                                class="cart-item__link2">#Announcements</a></li>
+                                        <li class="cart-item__item2"><a href=""
+                                                class="cart-item__link2">#ArtisanKeycap</a></li>
+                                        <li class="cart-item__item2"><a href=""
+                                                class="cart-item__link2">#Collaboration</a></li>
+                                        <li class="cart-item__item2"><a href="" class="cart-item__link2">#Exoboy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 cart-item blog-slider__item">
+                            <div class="cart-item__link blog-slider__link">
+                                <div class="cart-item__img blog-slider__img"
+                                    style="background-image: url('./assets/img/sirius-3-yea-rold.jpeg');">
+                                </div>
+
+                                <div class="cart-item__content blog-slider__content">
+                                    <a class="cart-item__title2 blog-slider__title">SIRIUS IS 3 YEARS OLD!</a>
+                                    <div class="cart-item__date2 blog-slider__date">Nov 13, 2022</div>
+                                    <div class="cart-item__label2 blog-slider__label">It's not necessarily a dog's life.
+                                    </div>
+                                    <ul class="cart-item__list2 blog-slider__list">
+                                        <li class="cart-item__item2"><a href=""
+                                                class="cart-item__link2">#ArtkeySharing</a></li>
+                                        <li class="cart-item__item2"><a href=""
+                                                class="cart-item__link2">#ArtisanKeycap</a></li>
+                                        <li class="cart-item__item2"><a href="" class="cart-item__link2">#Sirius</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 cart-item blog-slider__item">
+                            <div class="cart-item__link blog-slider__link">
+                                <div class="cart-item__img blog-slider__img"
+                                    style="background-image: url('./assets/img/here-we-are.jpeg');">
+                                </div>
+
+                                <div class="cart-item__content blog-slider__content">
+                                    <a class="cart-item__title2 blog-slider__title">Here we are in September 22</a>
+                                    <div class="cart-item__date2 blog-slider__date">Sep 1, 2022</div>
+                                    <div class="cart-item__label2 blog-slider__label">This is the first in a new series
+                                        of blog to share with you the journey of Artkey in the words of its members.
+                                    </div>
+                                    <ul class="cart-item__list2 blog-slider__list">
+                                        <li class="cart-item__item2"><a href=""
+                                                class="cart-item__link2">#ArtkeySharing</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 cart-item blog-slider__item">
+                            <div class="cart-item__link blog-slider__link">
+                                <div class="cart-item__img blog-slider__img"
+                                    style="background-image: url('./assets/img/the-keeb.png');">
+                                </div>
+
+                                <div class="cart-item__content blog-slider__content">
+                                    <a class="cart-item__title2 blog-slider__title">Kibou revamped! The Keeb Upgrade</a>
+                                    <div class="cart-item__date2 blog-slider__date">Jul 26, 2022</div>
+                                    <div class="cart-item__label2 blog-slider__label">Kibou was originally made in the
+                                        image of a mechkey enthusiast. And just like its subject of inspiration, there's
+                                        no endgame for Kibou!
+                                    </div>
+                                    <ul class="cart-item__list2 blog-slider__list">
+                                        <li class="cart-item__item2"><a href=""
+                                                class="cart-item__link2">#Annoucements</a></li>
+                                        <li class="cart-item__item2"><a href=""
+                                                class="cart-item__link2">#ArtisanKeycap</a></li>
+                                        <li class="cart-item__item2"><a href="" class="cart-item__link2">#Kibou</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 cart-item blog-slider__item">
+                            <div class="cart-item__link blog-slider__link">
+                                <div class="cart-item__img blog-slider__img"
+                                    style="background-image: url('./assets/img/new-studio.jpeg');">
+                                </div>
+
+                                <div class="cart-item__content blog-slider__content">
+                                    <a class="cart-item__title2 blog-slider__title">New Studio</a>
+                                    <div class="cart-item__date2 blog-slider__date">Jul 17, 2022</div>
+                                    <div class="cart-item__label2 blog-slider__label">For the artists in the Artkey
+                                        Team, ideas and inspiration for keycaps come in droves, and they arrive without
+                                        prior notice.
+                                    </div>
+                                    <ul class="cart-item__list2 blog-slider__list">
+                                        <li class="cart-item__item2"><a href=""
+                                                class="cart-item__link2">#ArtkeySharing</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 cart-item blog-slider__item">
+                            <div class="cart-item__link blog-slider__link">
+                                <div class="cart-item__img blog-slider__img"
+                                    style="background-image: url('./assets/img/piggy-evolved.jpeg');">
+                                </div>
+
+                                <div class="cart-item__content blog-slider__content">
+                                    <a class="cart-item__title2 blog-slider__title">Piggy Evolved - Porcus V1.5</a>
+                                    <div class="cart-item__date2 blog-slider__date">Jul 3, 2022</div>
+                                    <div class="cart-item__label2 blog-slider__label">It’s already been one year since
+                                        Porcus first joined Artkey Raffles! Our little space piggy has hit a growth
+                                        spurt in terms of popularity from when first launched!
+                                    </div>
+                                    <ul class="cart-item__list2 blog-slider__list">
+                                        <li class="cart-item__item2"><a href=""
+                                                class="cart-item__link2">#Annoucements</a></li>
+                                        <li class="cart-item__item2"><a href=""
+                                                class="cart-item__link2">#ArtisanKeycap</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 cart-item blog-slider__item">
+                            <div class="cart-item__link blog-slider__link">
+                                <div class="cart-item__img blog-slider__img"
+                                    style="background-image: url('./assets/img/authenticity.jpeg');">
+                                </div>
+
+                                <div class="cart-item__content blog-slider__content">
+                                    <a class="cart-item__title2 blog-slider__title">AUTHENTICITY</a>
+                                    <div class="cart-item__date2 blog-slider__date">June 21, 2022</div>
+                                    <div class="cart-item__label2 blog-slider__label">The artists at Artkey Universe are
+                                        driven by a passion for artisan keycaps.
+                                    </div>
+                                    <ul class="cart-item__list2 blog-slider__list">
+                                        <li class="cart-item__item2"><a href=""
+                                                class="cart-item__link2">#Annoucements</a></li>
+                                        <li class="cart-item__item2"><a href=""
+                                                class="cart-item__link2">#ArtisanKeycap</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 cart-item blog-slider__item">
+                            <div class="cart-item__link blog-slider__link">
+                                <div class="cart-item__img blog-slider__img"
+                                    style="background-image: url('./assets/img/a-keeb-for-your-keeb.jpeg');">
+                                </div>
+
+                                <div class="cart-item__content blog-slider__content">
+                                    <a class="cart-item__title2 blog-slider__title">KIBOU - A KEEB FOR YOUR KEEB!</a>
+                                    <div class="cart-item__date2 blog-slider__date">May 16, 2022</div>
+                                    <div class="cart-item__label2 blog-slider__label">Artisan keycap commission is our
+                                        favorite way to acquire ideas, inspirations and it is also a chance for us to
+                                        connect with our fans.
+                                    </div>
+                                    <ul class="cart-item__list2 blog-slider__list">
+                                        <li class="cart-item__item2"><a href="" class="cart-item__link2">#Releases</a>
+                                        </li>
+                                        <li class="cart-item__item2"><a href=""
+                                                class="cart-item__link2">#ArtisanKeycap</a></li>
+                                        <li class="cart-item__item2"><a href="" class="cart-item__link2">#Kibou</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 cart-item blog-slider__item">
+                            <div class="cart-item__link blog-slider__link">
+                                <div class="cart-item__img blog-slider__img"
+                                    style="background-image: url('./assets/img/artkey-stands.jpeg');">
+                                </div>
+
+                                <div class="cart-item__content blog-slider__content">
+                                    <a class="cart-item__title2 blog-slider__title">Artkey Stands For Peace LOOKBACK</a>
+                                    <div class="cart-item__date2 blog-slider__date">Mar 10, 2022</div>
+                                    <div class="cart-item__label2 blog-slider__label">We are living in the most peaceful
+                                        time of human history. However,...
+                                    </div>
+                                    <ul class="cart-item__list2 blog-slider__list">
+                                        <li class="cart-item__item2"><a href="" class="cart-item__link2">#Community</a>
+                                        </li>
+                                        <li class="cart-item__item2"><a href=""
+                                                class="cart-item__link2">#ArtisanKeycap</a></li>
+                                        <li class="cart-item__item2"><a href="" class="cart-item__link2">#Sirius</a>
+                                        </li>
+                                        <li class="cart-item__item2"><a href="" class="cart-item__link2">#Auction</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 cart-item blog-slider__item">
+                            <div class="cart-item__link blog-slider__link">
+                                <div class="cart-item__img blog-slider__img"
+                                    style="background-image: url('./assets/img/artisan-interview.jpeg');">
+                                </div>
+
+                                <div class="cart-item__content blog-slider__content">
+                                    <a class="cart-item__title2 blog-slider__title">ARTISAN INTERVIEW: DRACODILE,
+                                        SPHYNIX & LEULEU</a>
+                                    <div class="cart-item__date2 blog-slider__date">Feb 7, 2022</div>
+                                    <div class="cart-item__label2 blog-slider__label">Welcome to Artkey Universe's
+                                        Exclusive one-time-only Talkshow - Artisan Interview!
+                                    </div>
+                                    <ul class="cart-item__list2 blog-slider__list">
+                                        <li class="cart-item__item2"><a href="" class="cart-item__link2">#Release</a>
+                                        </li>
+                                        <li class="cart-item__item2"><a href=""
+                                                class="cart-item__link2">#ArtisanKeycap</a></li>
+                                        <li class="cart-item__item2"><a href="" class="cart-item__link2">#Dracodile</a>
+                                        </li>
+                                        <li class="cart-item__item2"><a href="" class="cart-item__link2">#Sphynix</a>
+                                        </li>
+                                        <li class="cart-item__item2"><a href="" class="cart-item__link2">#Leuleu</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid wide container__section slider-zoom">
+                <div class="row slider-zoom__container">
+                    <div class="col slider-zoom__item slider-zoom__item--left">
+                        <div class="slider-zoom__img" style="background-image: url('./assets/img/necrobot.jpeg');">
+                            <div class="slider-zoom__title">
+                                <div class="slider-zoom__label">
+                                    Artkey Universe x Angry Miao: Cosmo Killer
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col slider-zoom__item slider-zoom__item--center">
+                        <div class="slider-zoom__img" style="background-image: url('./assets/img/fire-ice.jpeg');">
+                            <div class="slider-zoom__title">
+                                <div class="slider-zoom__label">
+                                    Artkey Universe x DCcap Debut Raffle: Fire & Ice
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col slider-zoom__item slider-zoom__item--right">
+                        <div class="slider-zoom__img" style="background-image: url('./assets/img/authenticity.jpeg');">
+                            <div class="slider-zoom__title">
+                                <div class="slider-zoom__label">
+                                    DCcaps' Boy from the Stars puts on Artkey's Exploration Armor
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="grid wide container__section footer">
+                <div class="row footer__content">
+                    <div class="col l-12">
+                        <div class="footer__title">ARTKEY UNIVERSE</div>
+                        <div class="footer__label">Artisan Keycap Maker</div>
+                        <div class="footer__icon">
+                            <a href="#" class="footer__link"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="footer__link"><i class="fa-brands fa-discord"></i></a>
+                            <a href="#" class="footer__link"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="footer__link"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <div class="footer__copyright">© COPYRIGHT 2020 ARTKEYUNIVERSE. ALL RIGHTS RESERVED</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="overlay"></div>
+        <div class="grid auth-form login">
+            <div class="row auth-form__header login__header">
+                <h1 class="col l-6 auth-form__title login__title">Login</h1>
+                <div class="col l-6 auth-form__icon"> 
+                    <i class=" fa-solid fa-x"></i> 
+                </div>
+            </div>
+            <div class="row auth-form__content login__content">
+                <!-- auth-form__input--enabled -->
+                <div class="col l-12 auth-form__input">
+                    <label for="login-email">Email Adress</label>
+                    <input type="email" id="login-email" name="email" required="required"> 
+                </div>
+                <div class="col l-12 auth-form__input">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" required="required"> 
+                </div>
+                <div class="row auth-form__remeber-forgot">
+                    <div class="col l-6">
+                        <label class="auth-form__remeber">Remember me
+                            <input type="checkbox" id="login__checkbox">
+                            <span class="auth-form__checkbox-custom"></span>
+                        </label>
+                    </div>
+                    <div class="col l-6 login__forgot-link">
+                        <a href="#">Forgot password</a>
+                    </div>
+                </div>
+                <div class="col l-12 btn auth-form__btn login__sigin-btn">Sign In</div>
+                <div class="col l-12 btn login__continue-google">
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    Continue with Google
+                </div>
+                <div class="col l-12 login__join">
+                    Join Us
+                    <a href="#" class="login__link-sigup">
+                        SIGN UP
+                    </a>
+                </div>
+                <div class="col l-12 auth-form__footer login__footer">
+                    By signing in, you agree to the ArtkeyUniverse <br />
+                    <a href="" class="">Terms of Use</a> and <a href="" class="">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="grid auth-form register">
+            <div class="row auth-form__header">
+                <h1 class="col l-6 auth-form__title">Register</h1>
+                <div class="col l-6 auth-form__icon">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+            <div class="row auth-form__content">
+                <!-- auth-form__input--enabled -->
+                <div class="col l-12 auth-form__input">
+                    <label for="register-email">Email Adress</label>
+                    <input type="email" id="register-email" name="email" required="required"> 
+                </div>
+                <div class="col l-12 auth-form__input">
+                    <label for="register-phone-number">Phone Number</label>
+                    <input type="text" id="register-phone-number" name="phone" required="required"> 
+                </div>
+                <div class="col l-12 auth-form__input">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" name="password" required="required"> 
+                </div>
+                <div class="col l-12 auth-form__input">
+                    <label for="register-confirm-password">Confirm Password</label>
+                    <input type="password" id="register-confirm-password" name="confirm-password" required="required"> 
+                </div>
+                <div class="row auth-form-register-name">
+                    <div class="col l-6">
+                        <div class="auth-form__input">
+                            <label for="register-first-name">First Name</label>
+                            <input type="text" id="register-first-name" name="first-name" required="required"> 
+                        </div>
+                    </div>
+                    <div class="col l-6">
+                        <div class="auth-form__input">
+                            <label for="register-last-name">Last Name</label>
+                            <input type="text" id="register-last-name" name="last-name" required="required"> 
+                        </div> 
+                    </div>
+                </div>                 
+                <div class="col l-12 auth-form__input">
+                    <input type="date">
+                </div>
+
+                <div class="col l-12 auth-form__remeber-forgot">
+                    <label class="auth-form__remeber">Sign me up to receive news and special offers from Artkey Universe
+                        <input type="checkbox" id="login__checkbox">
+                        <span class="auth-form__checkbox-custom"></span>
+                    </label>
+                </div>
+                <div class="col l-12 btn auth-form__btn login__sigin-btn">Register</div>
+                <div class="col l-12 register__switch">
+                    <a href="#" class="register__switch-link">
+                        Already have an account?
+                    </a>
+                </div>
+                <div class="col l-12 auth-form__footer login__footer">
+                    By signing in, you agree to the ArtkeyUniverse <br />
+                    <a href="" class="">Terms of Use</a> and <a href="" class="">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

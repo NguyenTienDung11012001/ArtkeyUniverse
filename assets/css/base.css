@@ -1,0 +1,352 @@
+:root {
+    --primary-color: #fec54c;
+    --background-color: #0c0c0c;
+    
+
+    --header-height: 85px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #303030;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #5e5d5d;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #838383;
+}
+
+/* Btn */
+.btn {
+    min-width: 200px;
+    min-height: 45px;
+    font-size: 1.8rem;
+    line-height: 4.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+.btn-primary {
+    color: #0c0c0c;
+    background-color: var(--primary-color);
+}
+
+/* Cart */
+.cart-list {
+    padding: 0;
+}
+
+.cart-item {
+    width: 100%;
+    overflow: hidden;
+    ;
+}
+
+.cart-item__link {
+    width: 100%;
+    text-decoration: none;
+}
+
+.cart-item__img {
+    width: 100%;
+    min-height: 310px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cart-item__content {
+    background-color: #f1f1f1;
+    min-height: 95px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cart-item__title {
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: lighter;
+}
+
+.cart-item__label {
+    color: #535353;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+.cart-item__title2 {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.cart-item__date2 {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    margin-top: 20px;
+}
+
+.cart-item__label2 {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    margin-top: 20px;
+}
+
+.cart-item__list2 {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.cart-item__link2 {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    padding: 8px 18px;
+    border-radius: 15px;
+    margin-right: 18px;
+}
+
+/* Auth Form */
+.auth-form {
+    width: 454px;
+    min-height: 548px;
+    background-color: #fff;
+    padding: 30px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    display: none;
+}
+
+.auth-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #c2c2c2;
+    padding: 0 60px 30px;
+}
+
+.auth-form__title {
+    font-size: 3rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.auth-form__icon {
+    font-size: 2.4rem; 
+    text-align: right;
+}
+
+.auth-form__icon i{
+    width: 20px; 
+    cursor: pointer; 
+    text-align: right;
+}
+
+.auth-form__content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px;
+    padding-top: 14px;
+}
+
+.auth-form__input {
+    position: relative;
+    height: 46px;
+    border: 1px solid #c4c4c4;
+    padding: 0 16px;
+    margin: 0;
+    border-radius: 4px;
+    margin-top: 24px;
+}
+
+.auth-form__input label{    
+    position: absolute;
+    top: 23px;
+    left: 0;
+    pointer-events: none; 
+    font-size: 1.6rem;
+    line-height: 2rem;
+    left: 12px;
+    top: 13px;
+    padding: 0 4px;
+    color: #c4c4c4;
+}
+
+.auth-form__input label::after{
+    content: "*";
+    color: red;
+    position: absolute;   
+    top: 5px;
+    right: -7px;  
+    background-color: #fff;
+    padding-right: 4px;
+} 
+
+.auth-form__input.auth-form__input--enabled label{
+    font-size:  1rem;
+    line-height: 1.6rem;
+    top: -8px;
+    left: 12px;
+    padding: 0 4px;
+    display: block;
+    background-color: #fff;
+}
+
+.auth-form__input.auth-form__input--enabled label:after{
+    top: 3px;
+    right: -5px;
+}
+
+.auth-form__input input{ 
+    width: calc(100% + 32px); 
+    height: 46px;
+    display: block; 
+    border: none;    
+    background: none;   
+    font-size: 1.6rem;  
+    font-weight: 500; 
+    margin: 0 -16px;
+    padding: 0 16px;
+} 
+
+/* Hide the browser's default checkbox */
+.auth-form__remeber input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.auth-form__checkbox-custom {
+    position: absolute;
+    top: -2px;
+    left: -26px;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 2px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.auth-form__remeber input:checked~.auth-form__checkbox-custom {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Create the auth-form__checkbox-custom/indicator (hidden when not checked) */
+.auth-form__checkbox-custom:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the auth-form__checkbox-custom when checked */
+.auth-form__remeber input:checked~.auth-form__checkbox-custom:after {
+    display: block;
+}
+
+/* Style the auth-form__checkbox-custom/indicator */
+.auth-form__remeber .auth-form__checkbox-custom:after {
+    left: 6px;
+    top: 0px;
+    width: 4px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.auth-form__remeber label {
+    font-size: 1.2rem;
+    color: #858585;
+    margin-left: 12px;
+    user-select: none;
+}
+
+.auth-form__btn {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.auth-form__footer {
+    margin-top: 36px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #858585;
+    text-align: center;
+}
+
+.auth-form__footer a {
+    color: #858585;
+}
+
+.auth-form__remeber-forgot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.auth-form__remeber {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 26px;
+    font-size: 1.2rem;
+    color: #858585;
+} 
